@@ -351,57 +351,47 @@ nav ul li a:hover::after {
 }
 
 /* --- 7. Contact Form --- */
-#contact .container {
-    max-width: 800px;
+#contact {
+  text-align: center;
 }
 
-.contact-form {
-    max-width: 700px;
-    margin: 0 auto;
-    background: var(--card-bg-color);
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.07);
+.contact-card {
+  max-width: 520px;
+  margin: 30px auto 0;
+  padding: 24px 32px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
 }
 
-.form-group {
-    margin-bottom: 25px;
+.contact-intro {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
-.contact-form label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 500;
-    font-size: 1rem;
-    color: var(--dark-text-color);
+.contact-row {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 6px 0;
+  font-size: 1rem;
 }
 
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-family: var(--font-body);
-    font-size: 1rem;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+.contact-label {
+  font-weight: 600;
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
-    outline: none;
-    border-color: var(--accent-color);
-    box-shadow: 0 0 0 3px rgba(41, 182, 246, 0.25); /* Adjusted for new accent color */
+.contact-row i {
+  margin-right: 6px;
 }
 
-.contact-form button.btn {
-    width: 100%;
-    padding: 15px;
-    font-size: 1.1rem;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    border: none;
-    cursor: pointer;
+.contact-row a {
+  text-decoration: none;
+}
+
+.contact-row a:hover {
+  text-decoration: underline;
 }
 
 /* --- 8. Footer --- */
