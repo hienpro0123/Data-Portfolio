@@ -86,57 +86,91 @@
   </div>
 </section>
 
-<!-- Projects -->
-<section id="projects" class="py-5 text-center">
-  <div class="container">
-    <h2 class="fw-bold mb-4">Projects</h2>
-    <div class="row justify-content-center">
+  
+<!-- PROJECTS SECTION -->
+<section id="projects" class="section">
+    <div class="container">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
 
-      <!-- Project: Customer Shopping Behavior Report -->
-      <div class="col-md-4 mb-4">
-        <div class="card h-100 border-0 shadow-sm">
-          <img src="imgs/Customer.webp" class="card-img-top" alt="Customer Shopping Behavior Report" />
-          <div class="card-body">
-            <h5 class="card-title fw-bold">Customer Shopping Behavior</h5>
-            <p class="card-text">
-              
-            </p>
-            <a href="https://github.com/hienpro0123/Data-Portfolio/blob/main/projects/customer_sales_analysis/Report.pdf" target="_blank"  class="text-decoration-none me-2">Report</a> |
-            <a href="https://github.com/hienpro0123/Data-Portfolio/tree/main/projects/customer_sales_analysis" target="_blank" class="text-decoration-none ms-2">Source</a>
-          </div>
+            <!-- Project 1: Customer Shopping Behavior -->
+            <div class="project-card">
+                <!--💡UPDATE: Add a preview image of your project to assets/images/ -->
+                <img src="assets/images/project-placeholder-1.jpg" alt="Customer Shopping Behavior Project">
+                <div class="project-card-content">
+                    <h3>Customer Shopping Behavior</h3>
+                    <p>
+                        Cleaned and analyzed 504 shopping-mall transactions using Python, SQL Server, and Power BI
+                        to explore customer profiles, spending patterns, and preferred payment methods.
+                    </p>
+                    <div class="project-buttons">
+                        <!-- GitHub repo -->
+                        <a href="https://github.com/hienpro0123/Data-Portfolio/tree/main/projects/customer_sales_analysis"
+                           target="_blank" class="btn">Documentation</a>
+                        <!-- Live dashboard (Power BI / Tableau) -->
+                        <a href="[YOUR_CUSTOMER_DASHBOARD_URL]"
+                           target="_blank" class="btn btn-secondary">View Dashboard</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: Pizza Sales Report -->
+            <div class="project-card">
+                <img src="assets/images/project-placeholder-2.jpg" alt="Pizza Sales Report Project">
+                <div class="project-card-content">
+                    <h3>Pizza Sales Report</h3>
+                    <p>
+                        Built a SQL and Power BI dashboard to track daily and monthly pizza sales, top/bottom pizzas,
+                        and key KPIs such as revenue, orders, and average order value.
+                    </p>
+                    <div class="project-buttons">
+                        <a href="https://github.com/hienpro0123/Data-Portfolio/tree/main/projects/pizza_sales_report"
+                           target="_blank" class="btn">Documentation</a>
+                        <a href="[YOUR_PIZZA_DASHBOARD_URL]"
+                           target="_blank" class="btn btn-secondary">View Dashboard</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3: Real Estate Price Prediction -->
+            <div class="project-card">
+                <img src="assets/images/project-placeholder-3.jpg" alt="Real Estate Price Prediction Project">
+                <div class="project-card-content">
+                    <h3>Real Estate Price Prediction</h3>
+                    <p>
+                        Developed a regression model to predict real estate prices from property features
+                        (location, size, rooms) using Python (Pandas, Scikit-learn), and visualized insights in Power BI.
+                    </p>
+                    <div class="project-buttons">
+                        <a href="https://github.com/hienpro0123/Data-Portfolio/tree/main/projects/real_estate_price_prediction"
+                           target="_blank" class="btn">Documentation</a>
+                        <a href="[YOUR_REAL_ESTATE_DASHBOARD_URL]"
+                           target="_blank" class="btn btn-secondary">View Dashboard</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4: TopCV Job ETL Pipeline -->
+            <div class="project-card">
+                <img src="assets/images/project-placeholder-4.jpg" alt="TopCV Job ETL Pipeline Project">
+                <div class="project-card-content">
+                    <h3>TopCV Job ETL Pipeline</h3>
+                    <p>
+                        Automated ETL pipeline that crawls TopCV data analyst jobs, cleans salary and location fields,
+                        and loads data into PostgreSQL for further analysis and dashboarding.
+                    </p>
+                    <div class="project-buttons">
+                        <a href="https://github.com/hienpro0123/Data-Portfolio/tree/main/projects/topcv_job_pipeline"
+                           target="_blank" class="btn">Documentation</a>
+                        <a href="[YOUR_TOPCV_DASHBOARD_URL]"
+                           target="_blank" class="btn btn-secondary">View Dashboard</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
-      </div>
-
-
-      <!-- Project: Pizza Sales Report -->
-      <div class="col-md-4 mb-4">
-        <div class="card h-100 border-0 shadow-sm">
-          <img src="imgs/pizza.jpg" class="card-img-top" alt="Pizza Sales Report" />
-          <div class="card-body">
-            <h5 class="card-title fw-bold">Pizza Sales Report</h5>
-            <p class="card-text">
-              
-            </p>
-            <a href="#" target="_blank"  class="text-decoration-none me-2">Report</a> |
-            <a href="https://github.com/hienpro0123/Data-Portfolio/tree/main/projects/pizza_sales_report" target="_blank" class="text-decoration-none ms-2">Source</a>
-          </div>
-        </div>
-      </div>
-
-       <!-- Project: Real estate price prediction -->
-      <div class="col-md-4 mb-4">
-        <div class="card h-100 border-0 shadow-sm">
-          <img src="imgs/price_house.jpg" class="card-img-top" alt="Real estate price prediction" />
-          <div class="card-body">
-            <h5 class="card-title fw-bold">Real estate price prediction</h5>
-            <p class="card-text">
-              
-            </p>
-            <a href="#" target="_blank"  class="text-decoration-none me-2">Report</a> |
-            <a href="https://github.com/hienpro0123/Data-Portfolio/tree/main/projects/real_estate_price_prediction" target="_blank" class="text-decoration-none ms-2">Source</a>
-          </div>
-        </div>
-      </div>
+    </div>
+</section>
 
 
          <!-- Project: TopCV Job ETL Pipeline -->
