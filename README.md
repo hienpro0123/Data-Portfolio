@@ -1,6 +1,4 @@
-# Trinh Quang Hien - Data Analysis Portfolio
-
-Welcome! This repository contains the complete template for my professional, one-page data analysis portfolio website, hosted for free on GitHub Pages.
+# Trinh Quang Hien
 
 🌐 **Live Portfolio:**  
 https://hienpro0123.github.io/Data-Portfolio/
