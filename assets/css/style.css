@@ -351,47 +351,109 @@ nav ul li a:hover::after {
 }
 
 /* --- 7. Contact Form --- */
-#contact {
+.contact-section {
+  padding: 80px 16px;
+}
+
+.section-title {
   text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 8px;
+  color: #152238;
+}
+
+.section-subtitle {
+  text-align: center;
+  max-width: 520px;
+  margin: 0 auto 32px;
+  color: #6b7280;
+  font-size: 0.98rem;
 }
 
 .contact-card {
-  max-width: 520px;
-  margin: 30px auto 0;
-  padding: 24px 32px;
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 32px 36px;
+  border-radius: 24px;
   background: #ffffff;
-  border-radius: 16px;
-  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.12);
+  display: grid;
+  gap: 24px;
 }
 
-.contact-intro {
-  margin-bottom: 20px;
-  font-size: 1rem;
+@media (min-width: 768px) {
+  .contact-card {
+    grid-template-columns: 2fr 3fr;
+    padding: 36px 44px;
+  }
+}
+
+.contact-header h3 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  color: #111827;
+}
+
+.contact-header p {
+  color: #6b7280;
+  font-size: 0.98rem;
   line-height: 1.6;
 }
 
-.contact-row {
+.contact-list {
   display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: #f9fafb;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease,
+              box-shadow 0.2s ease;
+  color: #111827;
+}
+
+.contact-item:hover {
+  background: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.12);
+}
+
+.contact-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 8px;
-  margin: 6px 0;
-  font-size: 1rem;
+  background: #111827;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-label {
-  font-weight: 600;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #9ca3af;
 }
 
-.contact-row i {
-  margin-right: 6px;
-}
-
-.contact-row a {
-  text-decoration: none;
-}
-
-.contact-row a:hover {
-  text-decoration: underline;
+.contact-value {
+  font-size: 0.98rem;
+  font-weight: 500;
+  color: #111827;
+  word-break: break-all;
 }
 
 /* --- 8. Footer --- */
