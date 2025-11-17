@@ -20,7 +20,7 @@ I am a third-year Data Science student with hands-on experience building end-to-
 
 This template is set up to showcase my best work. You can see the project cards on the live website and in the `index.html` file.
 
-### Retail Sales & Product Performance Dashboard
+### Pizza Sales Analytics
 Analyzed thousands of pizza sales transactions using SQL Server to explore revenue by time, store, and product type.  
 Built an interactive Power BI dashboard to highlight top/bottom performers, revenue trends, and ordering patterns to support data-driven decisions.
 
