@@ -63,33 +63,35 @@ img {
 header {
     background: var(--primary-color);
     color: var(--white-color);
-    padding: 70px 0;
+    padding: 50px 0 40px;   /* ↓ bớt chiều cao vùng header */
     text-align: center;
 }
 
 header h1 {
     font-family: var(--font-heading);
-    font-size: 4rem;
+    font-size: 3.2rem;      /* ↓ nhỏ hơn 4rem */
     font-weight: 700;
-    margin-bottom: 15px;
+    margin-bottom: 8px;     /* ↓ ít khoảng trống hơn */
     letter-spacing: 1px;
 }
 
 header p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;      /* ↓ tagline nhỏ lại nhẹ */
     font-weight: 300;
     opacity: 0.9;
-    margin-bottom: 35px;
+    margin-bottom: 22px;    /* ↓ giảm khoảng cách xuống icon */
 }
+
 
 /* --- 3.5 Social Icons --- */
 .social-links a {
     color: var(--white-color);
-    font-size: 2.2rem;   
-    margin: 0 18px;     
+    font-size: 2rem;      /* hoặc 1.8rem nếu muốn rất gọn */
+    margin: 0 14px;
     transition: transform 0.3s ease, color 0.3s ease;
     display: inline-block;
 }
+
 
 .social-links a:hover {
     color: var(--accent-color);
