@@ -353,109 +353,101 @@ nav ul li a:hover::after {
 }
 
 /* --- 7. Contact Form --- */
+/* Contact section */
 .contact-section {
-  padding: 80px 16px;
-}
-
-.section-title {
   text-align: center;
-  font-size: 2.4rem;
-  margin-bottom: 8px;
-  color: #152238;
+  margin: 80px auto;
 }
 
-.section-subtitle {
-  text-align: center;
-  max-width: 520px;
-  margin: 0 auto 32px;
-  color: #6b7280;
-  font-size: 0.98rem;
+.contact-section .section-title {
+  font-size: 2.6rem;
+  color: #1A2A4C;
+  margin-bottom: 0.5rem;
 }
 
+.contact-underline {
+  width: 80px;
+  height: 3px;
+  background: #29B6F6;
+  margin: 0 auto 40px;
+  border-radius: 999px;
+}
+
+/* Card khung trắng */
 .contact-card {
-  max-width: 780px;
+  max-width: 820px;
   margin: 0 auto;
-  padding: 32px 36px;
-  border-radius: 24px;
+  padding: 2.5rem 3rem;
   background: #ffffff;
-  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.12);
+  border-radius: 28px;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+}
+
+/* Grid 2 cột cho email / phone */
+.contact-grid {
   display: grid;
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
 }
 
-@media (min-width: 768px) {
-  .contact-card {
-    grid-template-columns: 2fr 3fr;
-    padding: 36px 44px;
-  }
-}
-
-.contact-header h3 {
-  font-size: 1.3rem;
-  margin-bottom: 8px;
-  color: #111827;
-}
-
-.contact-header p {
-  color: #6b7280;
-  font-size: 0.98rem;
-  line-height: 1.6;
-}
-
-.contact-list {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
+/* Từng item */
 .contact-item {
   display: flex;
   align-items: center;
-  gap: 14px;
-  padding: 12px 14px;
-  border-radius: 16px;
-  background: #f9fafb;
-  text-decoration: none;
-  transition: background 0.2s ease, transform 0.2s ease,
-              box-shadow 0.2s ease;
-  color: #111827;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  border-radius: 20px;
+  background: #f9fbff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .contact-item:hover {
-  background: #ffffff;
-  transform: translateY(-2px);
-  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.12);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
 }
 
+/* Icon tròn */
 .contact-icon {
-  width: 42px;
-  height: 42px;
+  width: 46px;
+  height: 46px;
   border-radius: 999px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #111827;
+  background: #1A2A4C;
   color: #ffffff;
-  font-size: 18px;
+  font-size: 1.1rem;
 }
 
-.contact-text {
-  display: flex;
-  flex-direction: column;
-}
-
+/* Text */
 .contact-label {
-  font-size: 0.78rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: #9ca3af;
+  color: #94a3b8;
+  margin-bottom: 0.25rem;
 }
 
 .contact-value {
-  font-size: 0.98rem;
-  font-weight: 500;
-  color: #111827;
-  word-break: break-all;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1f2937;
+  text-decoration: none;
+}
+
+.contact-value:hover {
+  color: #29B6F6;
+}
+
+/* Responsive nhỏ */
+@media (max-width: 600px) {
+  .contact-card {
+    padding: 1.8rem 1.4rem;
+  }
+
+  .contact-section .section-title {
+    font-size: 2rem;
+  }
 }
 
 /* --- 8. Footer --- */
@@ -472,8 +464,6 @@ footer p {
 }
 
 /* --- 9. Responsive Design --- */
-/* --- 9. Responsive Design --- */
-
 /* Tablet: dưới ~992px */
 @media (max-width: 992px) {
   .skills-table {
