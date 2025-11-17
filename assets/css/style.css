@@ -85,8 +85,8 @@ header p {
 /* --- 3.5 Social Icons --- */
 .social-links a {
     color: var(--white-color);
-    font-size: 1.6rem;
-    margin: 0 15px;
+    font-size: 2.2rem;   
+    margin: 0 18px;     
     transition: transform 0.3s ease, color 0.3s ease;
     display: inline-block;
 }
