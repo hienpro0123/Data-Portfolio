@@ -1,6 +1,6 @@
 # Trinh Quang Hien
 
-🌐 **Live Portfolio:**  
+🌐 **Portfolio:**  
 https://hienpro0123.github.io/Data-Portfolio/
 
 🔗 **LinkedIn:**  
