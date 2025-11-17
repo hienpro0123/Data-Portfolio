@@ -470,42 +470,132 @@ footer p {
 }
 
 /* --- 9. Responsive Design --- */
+/* --- 9. Responsive Design --- */
+
+/* Tablet: dưới ~992px */
 @media (max-width: 992px) {
-    .skills-table {
-        grid-template-columns: 1fr 1fr;
-    }
-    .skill-column:nth-child(2) {
-        border-right: none;
-    }
+  .skills-table {
+      grid-template-columns: 1fr 1fr;
+  }
+
+  .skill-column:nth-child(2) {
+      border-right: none;
+  }
 }
 
+/* Tablet nhỏ & đa số mobile (≤768px) */
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 2.8rem;
-    }
-    
-    .about-content {
-        flex-direction: column;
-        text-align: center;
-    }
+  header {
+      padding: 60px 0;
+  }
 
-    #projects .container {
-        padding: 0 5px; 
-    }
+  header h1 {
+      font-size: 2.8rem;
+  }
+  
+  header p {
+      font-size: 1.1rem;
+      padding: 0 10px;
+  }
 
-    .projects-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .about-content {
+      flex-direction: column;
+      text-align: center;
+      gap: 30px;
+  }
 
-    .skills-table {
-        grid-template-columns: 1fr;
-        padding: 20px;
-        gap: 40px;
-    }
+  .profile-photo {
+      width: 230px;
+      height: 230px;
+  }
 
-    .skill-column:not(:last-child) {
-        border-right: none;
-        border-bottom: 1px solid #e9ecef;
-        padding-bottom: 30px;
-    }
+  #projects .container {
+      padding: 0 5px; 
+  }
+
+  .projects-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 cột cho tablet & màn to */
+      gap: 24px;
+  }
+
+  .skills-table {
+      grid-template-columns: 1fr;
+      padding: 24px;
+      gap: 32px;
+  }
+
+  .skill-column:not(:last-child) {
+      border-right: none;
+      border-bottom: 1px solid #e9ecef;
+      padding-bottom: 24px;
+  }
+
+  .section {
+      padding: 80px 0;
+  }
+
+  .section h2 {
+      font-size: 2.4rem;
+      margin-bottom: 50px;
+  }
 }
+
+/* Điện thoại nhỏ (≤576px) */
+@media (max-width: 576px) {
+  header {
+      padding: 45px 0;
+  }
+
+  header h1 {
+      font-size: 2.3rem;
+  }
+
+  header p {
+      font-size: 1rem;
+      margin-bottom: 25px;
+  }
+
+  .social-links a {
+      font-size: 1.9rem;
+      margin: 0 10px;
+  }
+
+  .projects-grid {
+      grid-template-columns: 1fr;   /* 1 project / dòng cho dễ đọc trên mobile */
+      gap: 20px;
+  }
+
+  .project-card-content {
+      padding: 20px;
+  }
+
+  .section {
+      padding: 70px 0;
+  }
+
+  .section h2 {
+      font-size: 2.1rem;
+      margin-bottom: 35px;
+  }
+
+  .skills-table {
+      padding: 20px;
+  }
+
+  .contact-card {
+      padding: 24px 20px;
+      border-radius: 18px;
+      box-shadow: 0 16px 40px rgba(15, 23, 42, 0.12);
+      grid-template-columns: 1fr;   /* stack trên dưới */
+      gap: 18px;
+  }
+
+  .contact-header h3 {
+      font-size: 1.15rem;
+  }
+
+  .contact-header p {
+      font-size: 0.95rem;
+  }
+}
+
