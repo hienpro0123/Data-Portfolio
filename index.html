@@ -3,23 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Title -->
+
     <title>Trinh Quang Hien | Data Science & Analytics Portfolio</title>
-      
-    <!-- Favicon -->
+
     <link rel="icon" type="image/png" href="/favicon-32x32.png">
     <link rel="apple-touch-icon" href="/favicon-32x32.png">
-    
-    <!-- Google Fonts -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    
-    <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -39,7 +33,7 @@
             <a href="https://www.instagram.com/shishitakaru/" target="_blank" title="Instagram">
                 <i class="fab fa-instagram"></i>
             </a>
-            <a href="imgs/TrinhQuangHien.pdf" download title="Download CV">
+            <a href="imgs/cv.pdf" download title="Download CV">
                 <i class="fas fa-file-arrow-down"></i>
             </a>
         </div>
@@ -63,15 +57,14 @@
     <div class="container">
         <h2>About Me</h2>
         <div class="about-content">
-            <!-- Profile photo -->
             <img src="imgs/profile.jpg" alt="Trinh Quang Hien" class="profile-photo">
             <div class="about-text">
                 <p>
-                    Hi, I’m <strong>Trinh Quang Hien</strong>, a third-year <strong>Data Science student</strong> at the Industrial University of Ho Chi Minh City with a strong interest in <strong>Data Engineering</strong>. 
+                    Hi, I'm <strong>Trinh Quang Hien</strong>, a third-year <strong>Data Science student</strong> at the Industrial University of Ho Chi Minh City with a strong interest in <strong>Data Engineering</strong>.
                     I focus on building reliable end-to-end data pipelines and scalable ETL workflows using <strong>Python, SQL, Apache Airflow, and Docker</strong>.
                 </p>
                 <p>
-                    My projects mainly involve <strong>retail, supply chain, and e-commerce</strong> datasets, where I design data pipelines, automate data processing, and ensure clean, structured data for analytics. 
+                    My projects mainly involve <strong>retail, supply chain, and e-commerce</strong> datasets, where I design data pipelines, automate data processing, and ensure clean, structured data for analytics.
                     Through this portfolio, I showcase how I transform raw data into well-organized datasets and data infrastructure that support efficient analytics and data-driven decision making.
                 </p>
             </div>
@@ -83,64 +76,102 @@
 <section id="projects" class="section">
     <div class="container">
         <h2>My Projects</h2>
-        <div class="projects-grid">
 
-            <!--💡UPDATE: Replace this with your own project. Add as many as you like!-->
-            <!-- Project 1 -->
-            <div class="project-card">
-                <img src="imgs/topcv.png" alt="Project Four Preview">
-                <div class="project-card-content">
-                    <h3>TopCV Job ETL Pipeline</h3>
-                    <p>
-                        Automated ETL pipeline that crawls TopCV data analyst jobs, cleans salary and location fields,
-                        and loads data into PostgreSQL for further analysis and dashboarding
-                    </p>
-                    <div class="project-buttons">
-                        <a href="https://github.com/hienpro0123/job-market-etl-pipeline" target="_blank" class="btn">Documentation</a>
+        <div class="projects-tabs">
+            <input type="radio" name="project-category" id="projects-data" class="projects-tab-input" checked>
+            <input type="radio" name="project-category" id="projects-web" class="projects-tab-input">
+
+            <div class="projects-tab-nav" role="tablist" aria-label="Project categories">
+                <label for="projects-data" class="projects-tab-btn">Data</label>
+                <label for="projects-web" class="projects-tab-btn">Web</label>
+            </div>
+
+            <div class="projects-panel projects-panel-data">
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="imgs/churn.png" alt="Customer Churn Prediction System preview">
+                        <div class="project-card-content">
+                            <h3>Customer Churn Prediction System</h3>
+                            <p>
+                                End-to-end churn prediction system with data processing, model training,
+                                and real-time and batch inference, powered by Databricks, PostgreSQL, and AI-driven retention insights.
+                            </p>
+                            <div class="project-buttons">
+                                <a href="https://github.com/hienpro0123/predict_customer_churn" target="_blank" class="btn">Documentation</a>
+                                <a href="" target="_blank" class="btn">Dashboard</a>
+                            </div>
+                        </div>
                     </div>
+
+                    
+                    <div class="project-card">
+                        <img src="imgs/Banking.png" alt="Banking E2E Data Engineering preview">
+                        <div class="project-card-content">
+                            <h3>Banking E2E Data Engineering Pipeline</h3>
+                            <p>
+                                End-to-end banking data engineering project demonstrating CDC-based data ingestion,
+                                real-time streaming with Kafka, orchestration using Airflow, transformations with dbt,
+                                and analytics-ready storage in PostgreSQL.
+                            </p>
+                            <div class="project-buttons">
+                                <a href="https://github.com/hienpro0123/banking-e2e-data-engineering" target="_blank" class="btn">Documentation</a>
+                                <a href="" target="_blank" class="btn">Dashboard</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="imgs/topcv.png" alt="TopCV Job ETL Pipeline preview">
+                        <div class="project-card-content">
+                            <h3>TopCV Job ETL Pipeline</h3>
+                            <p>
+                                Automated ETL pipeline that crawls TopCV data analyst jobs, cleans salary and location fields,
+                                and loads data into PostgreSQL for further analysis and dashboarding.
+                            </p>
+                            <div class="project-buttons">
+                                <a href="https://github.com/hienpro0123/job-market-etl-pipeline" target="_blank" class="btn">Documentation</a>
+                                <a href="" target="_blank" class="btn">Dashboard</a>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
 
-            <!-- Project 2 -->
-            <div class="project-card">
-                <img src="imgs/Banking.png" alt="Banking E2E Data Engineering Preview">
-                <div class="project-card-content">
-                    <h3>Banking E2E Data Engineering Pipeline</h3>
-                    <p>
-                        End-to-end banking data engineering project demonstrating CDC-based data ingestion,
-                        real-time streaming with Kafka, orchestration using Airflow, transformations with dbt,
-                        and analytics-ready storage in PostgreSQL.
-                    </p>
-                    <div class="project-buttons">
-                        <a href="https://github.com/hienpro0123/banking-e2e-data-engineering" 
-                           target="_blank" 
-                           class="btn">
-                           Documentation
-                        </a>
+            <div class="projects-panel projects-panel-web">
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="imgs/fashion.png" alt="Fashion E-commerce Platform">
+                        <div class="project-card-content">
+                            <h3>Fashion E-commerce Platform</h3>
+                            <p>
+                                Modern full-stack e-commerce web app with AI chat assistant, 
+                                built using React and Firebase, supporting product management, search, 
+                                and secure checkout.
+                            </p>
+                            <div class="project-buttons">
+                                <a href="https://github.com/hienpro0123/fashion-ecomerce-web.git" target="_blank" class="btn">Documentation</a>
+                                <a href="https://fashion-ecomerce-web.vercel.app/" target="_blank" class="btn">Deploy</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="imgs/todo.png" alt="Full-Stack Todo App">
+                        <div class="project-card-content">
+                            <h3>Full-Stack Todo App</h3>
+                            <p>
+                                Full-stack todo application with JWT authentication, user-specific task management, 
+                                and RESTful API built using FastAPI, Next.js, and PostgreSQL.
+                            </p>
+                            <div class="project-buttons">
+                                <a href="https://github.com/hienpro0123/to-do-list-fastapi.git" target="_blank" class="btn">Documentation</a>
+                                <a href="" target="_blank" class="btn">Deploy</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-             <!-- Project 3 -->
-            <div class="project-card">
-                <img src="imgs/churn.png" alt="Customer Churn System">
-                <div class="project-card-content">
-                    <h3>Customer Churn Prediction System</h3>
-                    <p>
-                        End-to-end churn prediction system with data processing, model training, 
-                        and real-time & batch inference, powered by Databricks, PostgreSQL, and AI-driven retention insights.
-                    </p>
-                    <div class="project-buttons">
-                        <a href="https://github.com/hienpro0123/predict_customer_churn" 
-                           target="_blank" 
-                           class="btn">
-                           Documentation
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-
         </div>
     </div>
 </section>
@@ -150,8 +181,7 @@
     <div class="container">
         <h2>Technical Skills</h2>
         <div class="skills-table">
-            
-            <!-- Column 1: Data Visualization -->
+
             <div class="skill-column">
                 <div class="skill-header">
                     <i class="fas fa-chart-pie"></i>
@@ -165,7 +195,6 @@
                 </ul>
             </div>
 
-            <!-- Column 2: Data Analysis -->
             <div class="skill-column">
                 <div class="skill-header">
                     <i class="fas fa-search-plus"></i>
@@ -179,7 +208,6 @@
                 </ul>
             </div>
 
-            <!-- Column 3: Data Engineering & ETL -->
             <div class="skill-column">
                 <div class="skill-header">
                     <i class="fas fa-cogs"></i>
@@ -204,7 +232,6 @@
 
   <div class="contact-card">
     <div class="contact-grid">
-      <!-- Email -->
       <div class="contact-item">
         <div class="contact-icon">
           <i class="fa-solid fa-envelope"></i>
@@ -217,7 +244,6 @@
         </div>
       </div>
 
-      <!-- Phone -->
       <div class="contact-item">
         <div class="contact-icon">
           <i class="fa-solid fa-phone"></i>

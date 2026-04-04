@@ -196,6 +196,58 @@ nav ul li a:hover::after {
 }
 
 /* --- 5.5 Project Cards --- */
+.projects-tabs {
+    max-width: 100%;
+}
+
+.projects-tab-input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.projects-tab-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: -30px 0 40px;
+    flex-wrap: wrap;
+}
+
+.projects-tab-btn {
+    display: inline-block;
+    min-width: 110px;
+    padding: 12px 24px;
+    border-radius: 999px;
+    border: 2px solid var(--primary-color);
+    background: transparent;
+    color: var(--primary-color);
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.projects-tab-btn:hover {
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+.projects-panel {
+    display: none;
+}
+
+#projects-data:checked ~ .projects-tab-nav label[for="projects-data"],
+#projects-web:checked ~ .projects-tab-nav label[for="projects-web"] {
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+#projects-data:checked ~ .projects-panel-data,
+#projects-web:checked ~ .projects-panel-web {
+    display: block;
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
@@ -505,6 +557,10 @@ footer p {
       padding: 0 5px; 
   }
 
+  .projects-tab-nav {
+      margin: -10px 0 32px;
+  }
+
   .projects-grid {
       grid-template-columns: repeat(2, 1fr); /* 2 cột cho tablet & màn to */
       gap: 24px;
@@ -550,6 +606,11 @@ footer p {
   .social-links a {
       font-size: 1.9rem;
       margin: 0 10px;
+  }
+
+  .projects-tab-btn {
+      min-width: 96px;
+      padding: 10px 20px;
   }
 
   .projects-grid {
